@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{$title}</title>
+    </head>
+    <body>
+        <div class="list">
+            {foreach list key=>value}
+            <div class="post">
+                <span>{$value.author}</span>
+                <span>{$value.title.name}</span>
+            </div>
+            {/foreach}
+        </div>
+    </body>
+</html>
